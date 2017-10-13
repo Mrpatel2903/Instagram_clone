@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:orientation="vertical"
-    android:background="@drawable/instagram_backgroung_wallpaper"
     tools:context="com.example.instagram.instagram_clone.MainActivity"
     tools:showIn="@layout/activity_main">
 
@@ -22,9 +21,10 @@
 
         <ImageView
 
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:background="@drawable/instagram_title_image" />
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="110dp"
+            android:background="@drawable/instagram_logo" />
 
     </LinearLayout>
 
@@ -45,7 +45,7 @@
             android:hint="EMAIL"
             android:padding="15dp"
             android:textAlignment="center"
-            android:textColorHint="#ffffff" />
+            android:textColorHint="#000000" />
 
         <EditText
             android:id="@+id/passwordLoginEditText"
@@ -58,7 +58,7 @@
             android:hint="PASSWORD"
             android:padding="15dp"
             android:textAlignment="center"
-            android:textColorHint="#ffffff" />
+            android:textColorHint="#000000" />
 
         <LinearLayout
             android:id="@+id/loginButtonMain"
@@ -75,7 +75,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="LOGIN"
-                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColor="@color/Black"
                 android:textSize="24sp" />
 
         </LinearLayout>
@@ -108,7 +108,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="--- OR --"
-                android:textColor="#ffffff"
+                android:textColor="#000000"
                 android:textSize="20sp" />
 
         </LinearLayout>
@@ -128,7 +128,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="CREATE ACCOUNT"
-                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColor="#2b2429"
                 android:textSize="24sp" />
 
         </LinearLayout>

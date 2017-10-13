@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/instagram_backgroung_wallpaper"
     tools:context="com.example.instagram.instagram_clone.RegisterUserActivity">
 
     <LinearLayout
@@ -20,9 +19,11 @@
 
         <ImageView
 
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:background="@drawable/instagram_title_image" />
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="110dp"
+            android:background="@drawable/instagram_logo" />
+
 
     </LinearLayout>
 
@@ -43,7 +44,7 @@
             android:hint="EMAIL"
             android:padding="15dp"
             android:textAlignment="center"
-            android:textColorHint="#ffffff" />
+            android:textColorHint="#000000" />
 
         <EditText
             android:id="@+id/passwordRegisterEditText"
@@ -56,7 +57,7 @@
             android:hint="PASSWORD"
             android:padding="15dp"
             android:textAlignment="center"
-            android:textColorHint="#ffffff" />
+            android:textColorHint="#000000" />
 
         <LinearLayout
             android:id="@+id/createAccountSubmitBtn"
@@ -73,7 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="CREATE"
-                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColor="@color/Black"
                 android:textSize="24sp" />
 
         </LinearLayout>
