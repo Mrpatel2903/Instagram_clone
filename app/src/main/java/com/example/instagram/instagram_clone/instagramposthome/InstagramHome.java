@@ -94,7 +94,6 @@ public class InstagramHome extends AppCompatActivity {
                                 Intent moveToSetupProfile = new Intent(InstagramHome.this, UserProfileActivity.class);
                                 moveToSetupProfile.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                 startActivity(moveToSetupProfile);
-
                             }
 
                         }

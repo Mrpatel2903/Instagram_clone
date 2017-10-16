@@ -14,16 +14,17 @@
 
         <ImageView
             android:id="@+id/userProfileImageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="100sp"
+            android:background="@mipmap/ic_launcher"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.15">
+        android:layout_height="wrap_content">
 
         <EditText
             android:id="@+id/userProfileName"
@@ -34,7 +35,7 @@
             android:layout_marginTop="25dp"
             android:background="@drawable/edittext_border"
             android:hint="USERNAME"
-            android:padding="15dp"
+            android:padding="10dp"
             android:textAlignment="center"
             android:textColorHint="#000000" />
 
@@ -47,7 +48,7 @@
             android:layout_marginTop="25dp"
             android:background="@drawable/edittext_border"
             android:hint="STATUS"
-            android:padding="15dp"
+            android:padding="10dp"
             android:textAlignment="center"
             android:textColorHint="#000000" />
 
@@ -59,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/fill_layout_color"
         android:gravity="center"
         android:padding="7dp">
