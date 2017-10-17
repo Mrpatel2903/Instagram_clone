@@ -74,10 +74,11 @@ public class InstagramHome extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
 
                 FirebaseUser user = firebaseAuth.getCurrentUser();
-                final String userId = user.getUid();
+
 
                 if( user != null)
                 {
+                    final String userId = user.getUid();
 
                     mDatabaseRef.addValueEventListener(new ValueEventListener() {
                         @Override
@@ -149,10 +150,17 @@ public class InstagramHome extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (id)
+        {
+            case R.id.action_settings: return true;
+
+            case R.id.sign_out: mAuth.signOut();
+                return true;
         }
+        //noinspection SimplifiableIfStatement
+        /*if (id == R.id.action_settings) {
+            return true;
+        }*/
 
         return super.onOptionsItemSelected(item);
     }
