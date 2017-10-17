@@ -212,9 +212,16 @@ public class InstagramHome extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
+
+            switch (position)
+            {
+                case 0: return  PopularPost.newInstance();
+                case 1: return InstagramPost.newInstance();
+                case 2: return FollowingInstaUser.newInstance();
+            }
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position + 1);
+            return InstagramPost.newInstance();
         }
 
         @Override
@@ -227,11 +234,11 @@ public class InstagramHome extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "SECTION 1";
+                    return "POPULAR";
                 case 1:
-                    return "SECTION 2";
+                    return "POSTS";
                 case 2:
-                    return "SECTION 3";
+                    return "FOLLOWING";
             }
             return null;
         }
