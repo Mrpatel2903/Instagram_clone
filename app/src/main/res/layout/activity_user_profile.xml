@@ -16,8 +16,8 @@
             android:id="@+id/userProfileImageView"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginLeft="100sp"
-            android:background="@mipmap/ic_launcher"/>
+            android:layout_marginLeft="120sp"
+            android:background="@drawable/ic_image_icon"/>
 
     </LinearLayout>
 

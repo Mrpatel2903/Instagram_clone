@@ -25,12 +25,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterUserActivity" />
-        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" android:theme="@style/Base.Theme.AppCompat"/>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
         <activity android:name=".profileuser.UserProfileActivity" />
         <activity
             android:name=".instagramposthome.InstagramHome"
             android:label="@string/title_activity_instagram_home"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".instagrampostinto.UserPostSend"></activity>
     </application>
 
 </manifest>

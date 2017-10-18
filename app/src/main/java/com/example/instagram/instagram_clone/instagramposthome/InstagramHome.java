@@ -18,10 +18,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.instagram.instagram_clone.MainActivity;
 import com.example.instagram.instagram_clone.R;
+import com.example.instagram.instagram_clone.instagrampostinto.UserPostSend;
 import com.example.instagram.instagram_clone.profileuser.UserProfileActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -52,12 +54,13 @@ public class InstagramHome extends AppCompatActivity {
     FirebaseAuth.AuthStateListener mAuthListener;
 
     DatabaseReference mDatabaseRef;
+    ImageView addpost;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_instagram_home);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.customToolBar);
         setSupportActionBar(toolbar);
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
@@ -118,6 +121,14 @@ public class InstagramHome extends AppCompatActivity {
         };
 
         mAuth.addAuthStateListener(mAuthListener);
+        addpost = (ImageView) findViewById(R.id.postHomeToolbar);
+
+        addpost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(InstagramHome.this, UserPostSend.class));
+            }
+        });
 
     }
 
