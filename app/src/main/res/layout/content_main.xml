@@ -23,7 +23,7 @@
 
             android:layout_width="130dp"
             android:layout_height="130dp"
-            android:layout_marginLeft="110dp"
+            android:layout_marginLeft="125dp"
             android:background="@drawable/instagram_logo" />
 
     </LinearLayout>
